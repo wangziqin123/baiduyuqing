@@ -1,0 +1,16 @@
+@sudu:5;
+@r:20;
+@dushu:30;
+@num:20;
+
+.loop(@i:0) when(@i<=@num){
+    @select:100/@num*@i*1%;
+    @a:360/@num*@i;
+    @{select}{
+      transform: translate(@r*cos(@a*pi()/180)*1px,@r*sin(@a*pi()/180)*1px);
+    }
+  .loop(@i+1);
+}
+@keyframes yuanzhou {
+   .loop()
+ }
